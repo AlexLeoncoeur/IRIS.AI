@@ -50,10 +50,12 @@ python camera_main.py
 ## 🎬 Video File
 <p>If you want to analyze a pre-recorded video, you can provide the path to the video file when running the program:</p>
 
+To choose your own video, edit on line 302:
+cap = cv2.VideoCapture('EDIT_HERE.mp4')
+
 ```bash
 python video_main.py
 ```
-(Currently, you need to input the video path inside the code itself.)
 
 ## 🖥️ Output
 <p>The program will show a window with the live recording (or the pre-recorded video), and it will display the detected emotion above the person's head, with a frame around the face being captured. The possible emotions include: <strong>neutral, happiness, sadness, surprise, fear, disgust, and anger</strong>.</p>
